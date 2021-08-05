@@ -1,7 +1,7 @@
 // Importing MySQL module
 const mysql = require("mysql");
 
-//load ENV CONFIG
+//LOAD ENV CONFIG
 const dotenv = require('dotenv');
 dotenv.config();
   
