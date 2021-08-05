@@ -1,12 +1,17 @@
 // Importing MySQL module
 const mysql = require("mysql");
+
+//load ENV CONFIG
+const dotenv = require('dotenv');
+dotenv.config();
   
 // Creating connection
 let db_con = mysql.createConnection({
-  host: 'localhost',
-  user: 'firas',
-  password: 'newpassword',
-  database: 'test'
+  host: process.env.MYSQL_HOST,
+  port: process.env.MYSQL_PORT,
+  user: process.env.MYSQL_USER,
+  password: process.env.MYSQL_PASSWORD,
+  database: process.env.MYSQL_DB
 });
 
 // Connect to MySQL server

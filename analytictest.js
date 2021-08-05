@@ -10,11 +10,6 @@ const jwt = new google.auth.JWT(process.env.CLIENT_EMAIL, null, process.env.PRIV
 /////////////////
 'use strict'
 
-
-
-
-
-
 const view_id = '247106205'
 
 process.env.GOOGLE_APPLICATION_CREDENTIALS = './auth.json'
